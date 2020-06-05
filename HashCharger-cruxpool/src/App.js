@@ -6,7 +6,6 @@ import HashCharger from "./HashCharger"
 function App() {
   return (
     <div className="App">
-      Ceci est un test
       <HashCharger config={config}/>
     </div>
   );
