@@ -1,0 +1,8 @@
+{
+  "subuser": "my-sub-user",
+  "hostaddress": "my-host-address",
+  "port": "my-port",
+  "username": "username",
+  "password": "password",
+  "algorithm": "equihash-zcash"
+}
