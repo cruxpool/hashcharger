@@ -1,8 +1,6 @@
 import React, { Component } from "react";
-import Button from "@material-ui/core/Button";
-import Fab from "@material-ui/core/Fab";
+import { Button, Box, Fab } from "@material-ui/core";
 import { Shop } from "@material-ui/icons";
-import { spacing } from "@material-ui/system";
 
 class HashCharger extends Component {
   constructor(props) {
@@ -46,15 +44,18 @@ class HashCharger extends Component {
   render() {
     return (
       <React.Fragment>
-        <Button
-          style={{ marginTop: "25px" }}
-          className="open-hashcharger"
-          variant="contained"
-          color="primary"
-        >
-          Launch HashCharger Modal
-        </Button>
+        {/* Primary button */}
+        <Box component="span">
+          <Button
+            className="open-hashcharger"
+            variant="contained"
+            color="primary"
+          >
+            Launch HashCharger Modal
+          </Button>
+        </Box>
 
+        {/* Floating action button */}
         <Fab
           className="open-hashcharger"
           style={{
