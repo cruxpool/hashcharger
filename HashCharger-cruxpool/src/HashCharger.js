@@ -1,9 +1,11 @@
 import React, { Component } from "react";
+import Button from "@material-ui/core/Button";
+import { spacing } from "@material-ui/system";
 
 class HashCharger extends Component {
   constructor(props) {
     super(props);
-    let config = props.config
+    let config = props.config;
     this.subuser = config.subuser;
     this.hostaddress = config.hostaddress;
     this.port = config.port;
@@ -41,9 +43,16 @@ class HashCharger extends Component {
 
   render() {
     return (
-      <div>
-        <button className="open-hashcharger">my button</button>
-      </div>
+      <React.Fragment>
+        <Button
+          style={{ marginTop: "25px" }}
+          className="open-hashcharger"
+          variant="contained"
+          color="primary"
+        >
+          Launch HashCharger Modal
+        </Button>
+      </React.Fragment>
     );
   }
 }
